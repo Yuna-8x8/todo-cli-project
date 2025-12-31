@@ -1,8 +1,5 @@
-if choice == "1":
-    task = input("Enter task: ")
-    todo_list.append({"task": task, "done": False})
-    print("Task added successfully.")
-def add_task(todo_list):
-    task = input("Enter task: ")
-    todo_list.append(task)
-    print("Task added successfully")
+def view_tasks(todo_list):
+    print("Your Tasks:")
+    for i in range(len(todo_list)):
+        print(i, todo_list)   # ❌ BUG: prints full list repeatedly
+
